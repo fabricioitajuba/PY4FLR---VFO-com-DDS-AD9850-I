@@ -1,3 +1,5 @@
+VFO com o DDS AD9850
+
 O arquivo "VFO-DDS - ESQUEMA COMPLETO.PDF" é o esquemático completo do projeto.
 
 O arquivo "VFO-DDS.hex" é o arquivo para ser gravado no PIC caso não queira fazer alguma alteração  no programa.
@@ -8,5 +10,5 @@ Na pasta "Programa e simulação" contém o programa fonte feito em "CCS" e o arqui
 
 Qualquer dúvida:
 
-fabricioitajuba@hotmail.com
+py4flr@gmail.com
 PY4FLR/PX4C1428
