@@ -1,0 +1,81 @@
+ÀÄVFO-DDS
+   ÃÄMAIN  1/432  Ram=4
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄlcd_init  0/62  Ram=6
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄlcd_send_nibble  0/17  Ram=1
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄlcd_send_nibble  0/17  Ram=1
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÀÄlcd_send_byte  0/66  Ram=3
+   ³  ³     ÃÄlcd_read_byte  (Inline)  Ram=3
+   ³  ³     ³  ÃÄlcd_read_nibble  0/6  Ram=0
+   ³  ³     ³  ÀÄlcd_read_nibble  0/6  Ram=0
+   ³  ³     ÃÄlcd_send_nibble  0/17  Ram=1
+   ³  ³     ÀÄlcd_send_nibble  0/17  Ram=1
+   ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ÃÄAD9850_init  0/7  Ram=0
+   ³  ÃÄAD9850_reset  0/14  Ram=0
+   ³  ÃÄ@DIVS3232  0/122  Ram=14
+   ³  ÃÄ@DIVS3232  0/122  Ram=14
+   ³  ÃÄ@MUL1616  0/21  Ram=5
+   ³  ÃÄ@MUL3232  0/44  Ram=13
+   ³  ÃÄ@MUL1616  0/21  Ram=5
+   ³  ÃÄlcd_putc  0/44  Ram=1
+   ³  ³  ÃÄlcd_gotoxy  0/18  Ram=4
+   ³  ³  ³  ÀÄlcd_send_byte  0/66  Ram=3
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄlcd_send_byte  0/66  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄlcd_gotoxy  0/18  Ram=4
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄlcd_send_byte  0/66  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÀÄlcd_send_byte  0/66  Ram=3
+   ³  ³     ÀÄ*
+   ³  ÃÄ@PRINTF_LU_641  0/99  Ram=9
+   ³  ³  ÀÄlcd_putc  0/44  Ram=1
+   ³  ³     ÀÄ*
+   ³  ÃÄlcd_putc  0/44  Ram=1
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PRINTF_LU_641  0/99  Ram=9
+   ³  ³  ÀÄ*
+   ³  ÃÄlcd_putc  0/44  Ram=1
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PRINTF_LU_641  0/99  Ram=9
+   ³  ³  ÀÄ*
+   ³  ÃÄlcd_putc  0/44  Ram=1
+   ³  ³  ÀÄ*
+   ³  ÃÄlcd_putc  0/44  Ram=1
+   ³  ³  ÀÄ*
+   ³  ÃÄlcd_putc  0/44  Ram=1
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PSTRINGC7_641  0/86  Ram=4
+   ³  ³  ÃÄlcd_putc  0/44  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÀÄlcd_putc  0/44  Ram=1
+   ³  ³     ÀÄ*
+   ³  ÃÄ@PSTRINGC7_641  0/86  Ram=4
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PSTRINGC7_641  0/86  Ram=4
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PSTRINGC7_641  0/86  Ram=4
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PSTRINGC7_641  0/86  Ram=4
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PSTRINGC7_641  0/86  Ram=4
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PSTRINGC7_641  0/86  Ram=4
+   ³  ³  ÀÄ*
+   ³  ÃÄ@SDTOF  0/48  Ram=5
+   ³  ÃÄAD9850_wr_serial  0/563  Ram=16
+   ³  ³  ÃÄ@DIVFF  (Inline)  Ram=14
+   ³  ³  ÃÄ@MULFF  (Inline)  Ram=13
+   ³  ³  ÀÄ@FTOSD  (Inline)  Ram=5
+   ³  ÀÄ@delay_ms1  0/20  Ram=1
+   ÀÄtrata_intRB  0/223  Ram=0
+      ÃÄcontagem  0/130  Ram=0
+      ÃÄcontagem  0/130  Ram=0
+      ÃÄcontagem  0/130  Ram=0
+      ÀÄcontagem  0/130  Ram=0

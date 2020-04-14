@@ -1,0 +1,185 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     lcd
+008     PSP_DATA
+008     lcdlat
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     @TRIS_C
+021-030 enc_states
+031-032 enc_position
+033-036 F_anterior
+037.0   plota_display
+038     step
+039-03C step_valor
+03D-040 F
+041-042 mega
+043-044 kilo
+045-046 cent
+047-048 @PRINTF_LU_647.P1
+047     lcd_init.i
+047-04A @SDTOF.P1
+047-04A @DIVS3232.P2
+047     encoder0Loop.@SCRATCH1
+047     MAIN.@SCRATCH1
+047     @PSTRINGC7_647.@SCRATCH1
+048-04B lcd_init.LCD_INIT_STRING
+048     encoder0Loop.@SCRATCH2
+048     MAIN.@SCRATCH2
+048     @PSTRINGC7_647.@SCRATCH2
+049     encoder0Loop.@SCRATCH3
+049     MAIN.@SCRATCH3
+049     @PSTRINGC7_647.@SCRATCH3
+049     @PRINTF_LU_647.@SCRATCH1
+04A     encoder0Loop.@SCRATCH4
+04A     MAIN.@SCRATCH4
+04A     @PSTRINGC7_647.@SCRATCH4
+04A     @PRINTF_LU_647.@SCRATCH2
+04B     AD9850_wr_serial.w0
+04B-04E @DIVS3232.P1
+04B-04C @MUL1616.P2
+04B     encoder0Loop.@SCRATCH5
+04B     @PRINTF_LU_647.@SCRATCH3
+04B     @SDTOF.@SCRATCH1
+04C-04F AD9850_wr_serial.frequence
+04C     lcd_init.@SCRATCH1
+04C     encoder0Loop.@SCRATCH6
+04C     @PRINTF_LU_647.@SCRATCH4
+04D-04E @MUL1616.P1
+04D     encoder0Loop.@SCRATCH7
+04D     @PRINTF_LU_647.@SCRATCH5
+04E     encoder0Loop.@SCRATCH8
+04E     @PRINTF_LU_647.@SCRATCH6
+04F-052 @MUL3232.P1
+04F     @DIVS3232.@SCRATCH1
+04F     @MUL1616.@SCRATCH1
+04F     @PRINTF_LU_647.@SCRATCH7
+050     lcd_putc.c
+050     AD9850_wr_serial.i
+050     @DIVS3232.@SCRATCH2
+051     @delay_ms1.P1
+051     AD9850_wr_serial.w
+051     lcd_gotoxy.x
+051     @DIVS3232.@SCRATCH3
+052     lcd_gotoxy.y
+052-055 AD9850_wr_serial.y
+052     @DIVS3232.@SCRATCH4
+053     lcd_gotoxy.address
+053-056 @MUL3232.P1
+053     @DIVS3232.@SCRATCH5
+054     lcd_gotoxy.@SCRATCH1
+054     @DIVS3232.@SCRATCH6
+055     lcd_send_byte.address
+056     lcd_send_byte.n
+056-059 AD9850_wr_serial.x
+057     lcd_read_byte.low
+057     lcd_send_byte.@SCRATCH1
+057     @MUL3232.@SCRATCH1
+058     lcd_read_byte.high
+058     lcd_send_nibble.n
+058     @MUL3232.@SCRATCH2
+059     lcd_read_byte.@SCRATCH1
+059     @MUL3232.@SCRATCH3
+05A-05D @FTOSD.P1
+05A-05D @MULFF.P2
+05A-05D @DIVFF.P3
+05A     AD9850_wr_serial.@SCRATCH1
+05A     @MUL3232.@SCRATCH4
+05B     @MUL3232.@SCRATCH5
+05E-061 @DIVFF.P1
+05E-061 @MULFF.P2
+05E     @FTOSD.@SCRATCH1
+062     @DIVFF.@SCRATCH1
+062     @MULFF.@SCRATCH1
+063     @DIVFF.@SCRATCH2
+063     @MULFF.@SCRATCH2
+064     @DIVFF.@SCRATCH3
+064     @MULFF.@SCRATCH3
+065     @DIVFF.@SCRATCH4
+065     @MULFF.@SCRATCH4
+066     @DIVFF.@SCRATCH5
+066     @MULFF.@SCRATCH5
+067     @DIVFF.@SCRATCH6
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+088     lcdtris
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const717.call
+00000D  @const719.call
+000016  @const729.call
+00001F  @const730.call
+000028  @const731.call
+000031  @const732.call
+00003A  @const733.call
+000043  @const734.call
+00004C  @const735.call
+000055  @delay_ms1
+000069  lcd_send_nibble
+00007A  lcd_read_nibble
+000080  lcd_send_byte
+000086  lcd_read_byte
+0000C2  lcd_init
+000100  AD9850_init
+00011B  AD9850_reset
+000160  lcd_gotoxy
+000172  lcd_putc
+00019E  @PSTRINGC7_647
+0001F4  @DIVS3232
+00026E  @MUL1616
+000283  @MUL3232
+0002AD  @PRINTF_LU_647
+000310  @SDTOF
+000340  AD9850_wr_serial
+000357  @DIVFF
+000438  @MULFF
+0004BC  @FTOSD
+0005C8  encoder0Loop
+000800  MAIN
+000800  @cinit1
+000819  @cinit2
+
+Project Directory:
+    C:\Users\Oro\Desktop\VFO-DDS\
+
+Project Files:
+    VFO-DDS.c                                               [07-mar-15 15:41  CRC=61A47009]
+    ..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h  [12-nov-13 14:35  CRC=81334808]
+    ..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c      [19-set-13 15:38  CRC=D1A6378A]
+    ad9850.h                                                [01-mar-15 11:19  CRC=C4BD0CF2]
+
+Source signature=3DF8097F
+
+Units:
+    VFO-DDS (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   VFO-DDS.xsym
+    Errors:      VFO-DDS.err
+    Ext Symbols: VFO-DDS.esym
+    INHX8:       VFO-DDS.hex
+    Symbols:     VFO-DDS.sym
+    List:        VFO-DDS.lst
+    Debug/COFF:  VFO-DDS.cof
+    Project:     VFO-DDS.ccspjt
+    Call Tree:   VFO-DDS.tre
+    Statistics:  VFO-DDS.STA
